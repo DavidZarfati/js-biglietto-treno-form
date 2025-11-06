@@ -23,7 +23,91 @@ document.addEventListener('DOMContentLoaded', function () {
             document.documentElement.style.height = '100%';
 
             const titolo = document.querySelector('h1');
-            titolo.textContent = 'Bravo, benvenuto al binario 9 e 3/4';
+            titolo.textContent = 'Bravo Severus🐍, benvenuto al binario 9 e 3/4, da che parte stai questa volta?';
+            titolo.style.color = 'white';
+
+
+            const container = document.querySelector('.container');
+            container.style.backgroundColor = 'transparent';
+
+
+            form.style.display = 'none';
+            document.getElementById('biglietto').classList.add('hidden');
+            return;
+        }
+        if (nome.toLowerCase() === 'harry potter') {
+            document.body.style.backgroundImage = 'url(./img/Hogwarts_Express.jpg)'
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.height = '100%';
+            document.documentElement.style.height = '100%';
+
+            const titolo = document.querySelector('h1');
+            titolo.textContent = 'Bravo Harry 🤓, benvenuto al binario 9 e 3/4,occhio ai mangiamorte';
+            titolo.style.color = 'white';
+
+
+            const container = document.querySelector('.container');
+            container.style.backgroundColor = 'transparent';
+
+
+            form.style.display = 'none';
+            document.getElementById('biglietto').classList.add('hidden');
+            return;
+        }
+        if (nome.toLowerCase() === 'hermione granger') {
+            document.body.style.backgroundImage = 'url(./img/Hogwarts_Express.jpg)'
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.height = '100%';
+            document.documentElement.style.height = '100%';
+
+            const titolo = document.querySelector('h1');
+            titolo.textContent = 'Brava Hermione, benvenuta al binario 9 e 3/4, ed è leviòsa,non leviosà🧏‍♀️';
+            titolo.style.color = 'white';
+
+
+            const container = document.querySelector('.container');
+            container.style.backgroundColor = 'transparent';
+
+
+            form.style.display = 'none';
+            document.getElementById('biglietto').classList.add('hidden');
+            return;
+        }
+        if (nome.toLowerCase() === 'ronald weasley') {
+            document.body.style.backgroundImage = 'url(./img/Hogwarts_Express.jpg)'
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.height = '100%';
+            document.documentElement.style.height = '100%';
+
+            const titolo = document.querySelector('h1');
+            titolo.textContent = 'Bravo Ron, benvenuto al binario 9 e 3/4,attento a Crosta😼';
+            titolo.style.color = 'white';
+
+
+            const container = document.querySelector('.container');
+            container.style.backgroundColor = 'transparent';
+
+
+            form.style.display = 'none';
+            document.getElementById('biglietto').classList.add('hidden');
+            return;
+        }
+        if (nome.toLowerCase() === 'tu sai chi') {
+            document.body.style.backgroundImage = 'url(./img/Hogwarts_Express.jpg)'
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.height = '100%';
+            document.documentElement.style.height = '100%';
+
+            const titolo = document.querySelector('h1');
+            titolo.textContent = 'M-Ma... quel TU SAI CHI? quello che non deve essere nominato?!☠';
             titolo.style.color = 'white';
 
 
