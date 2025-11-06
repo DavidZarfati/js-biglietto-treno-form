@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calcola il prezzo del biglietto del treno</h1>
+
+        <form id="form-treno">
+            <div class="input">
+                <label for="chilometri">Numero di chilometri da percorrere:</label>
+                <input type="number" id="chilometri" name="chilometri" min="1" required>
+            </div>
+
+            <div class="input-group">
+                <label for="età">Età del passeggero:</label>
+                <input type="number" id="age" name="età" min="1" max="120" required>
+            </div>
+
+            <button type="submit">Calcola Prezzo</button>
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
