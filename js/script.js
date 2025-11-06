@@ -45,7 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log(`Offerta: ${tipoOfferta}`);
         // console.log(`Prezzo finale: €${prezzo.toFixed(2)}`);
     });
-});
-form.addEventListener('reset', function () {
 
-})
+
+    form.addEventListener('reset', function () {
+        document.getElementById('biglietto').classList.add('hidden');
+    });
+});
