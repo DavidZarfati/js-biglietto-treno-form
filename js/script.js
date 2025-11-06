@@ -13,6 +13,29 @@ document.addEventListener('DOMContentLoaded', function () {
         const chilometri = parseFloat(chilometriElem.value);
         const eta = parseInt(etàElem.value);
 
+        // piccolo easter egg Harry potteriano
+        if (nome.toLowerCase() === 'alan rickman') {
+            document.body.style.backgroundImage = 'url(./img/Hogwarts_Express.jpg)'
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+            document.body.style.backgroundRepeat = 'no-repeat';
+            document.body.style.height = '100%';
+            document.documentElement.style.height = '100%';
+
+            const titolo = document.querySelector('h1');
+            titolo.textContent = 'Bravo, benvenuto al binario 9 e 3/4';
+            titolo.style.color = 'white';
+
+
+            const container = document.querySelector('.container');
+            container.style.backgroundColor = 'transparent';
+
+
+            form.style.display = 'none';
+            document.getElementById('biglietto').classList.add('hidden');
+            return;
+        }
+
         let prezzo = chilometri * 0.21;
         let tipoOfferta = "Biglietto Standard";
 
@@ -44,10 +67,24 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log(`Età: ${eta}`);
         // console.log(`Offerta: ${tipoOfferta}`);
         // console.log(`Prezzo finale: €${prezzo.toFixed(2)}`);
+
     });
 
 
     form.addEventListener('reset', function () {
         document.getElementById('biglietto').classList.add('hidden');
+
+        document.body.style.backgroundImage = '';
+
+        form.style.display = 'flex';
+
+
+        const titolo = document.querySelector('h1');
+        titolo.textContent = 'Calcola il prezzo del biglietto del treno';
+        titolo.style.color = '';
+
+
+        const container = document.querySelector('.container');
+        container.style.backgroundColor = '';
     });
 });
